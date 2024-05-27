@@ -1,3 +1,5 @@
+// toggle content on index.html
+
 function toggleContent(mySection) {
     var content = document.querySelector('.'+mySection+' div');
     var icon = document.querySelector('.'+mySection+' button .fa-chevron-down');
