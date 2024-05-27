@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Le CV de Jonathan Tramond">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Jonathan Tramond</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="styles/index.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--toggle content -->
+    <script src="scripts/script.js"></script>
+
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- HEADER -->
+    <header class="bg-primary text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary container">
+            <a class="navbar-brand" href="index.html"><i class="fas fa-briefcase"></i> Mon CV</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <body class="d-flex flex-column min-vh-100">
+            <div class="container">
+                <header class="text-center mb-5 mt-5">
+                    <div class="row align-items-center">
+                        <div class="col-md-7">
+                            <img src="images/profile.jpg" alt="Portrait de Jonathan Tramond" class="profile-img mx-auto d-block">
+                            <h1>Jonathan Tramond</h1>
+                            <p class="lead">En recherche d'une alternance dans le Développement Web</p>
+                        </div>
+                        <div class="col-md-4">
+                            <section class="contact-info text-center">
+                                    <h3>Mes informations</h3>
+                                <div class="card bg-dark text-white p-2">
+                                    <p><i class="fas fa-envelope"></i> <a class="card-link" href="mailto:jonathan.tramond@gmail.com">jonathan.tramond@gmail.com </a></p>
+                                    <p><i class="fas fa-phone"></i> 06 81 21 57 77</p>
+                                    <p><i class="fas fa-map-marker-alt"></i> 34070 Montpellier, France</p>
+                                    <p><i class="fab fa-linkedin-in"></i> <a class="card-link" href="https://www.linkedin.com/in/jonathan-tramond/" target="_blank">www.linkedin.com/in/jonathan-tramond</a></p>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+
+
+                </header>
+                
+                <main>
+
+                    <section class="introduction"> 
+                        <button type="button" class="section-title btn btn-light d-flex align-items-center justify-content-between w-100" onclick="toggleContent('introduction')">
+                          <span class="mb-0">Introduction</span>
+                          <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div>
+                          <p>Passionné par la programmation et désireux de mettre en pratique mes compétences, je suis actuellement à la recherche d'une alternance.
+                            Mon expérience internationale m'a permis de prendre pleinement conscience de mes aspirations professionnelles. Fort de cette expérience
+                            enrichissante, je suis résolu à trouver ma place dans ce milieu passionnant qu'est le développement web et la programmation en général.</p>
+                          <p>J'ai une solide compréhension des défis et des opportunités dans ce domaine dynamique, et je suis motivé pour continuer à apprendre et à
+                            évoluer aux côtés de professionnels aguerris. Mon objectif est de contribuer à des projets innovants et d'apporter ma passion pour la technologie
+                            à chaque nouvelle opportunité qui se présentera.</p>
+                        </div>
+                      </section>
+
+                    
+                      <section class="education">
+
+                        <button type="button" class="section-title btn btn-light d-flex align-items-center justify-content-between w-100" onclick="toggleContent('education')">
+                            <span class="mb-0">Parcours</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div>
+                            <div class="mb-4">
+                                <h3  class="degree">💻 Autoformation</h3>
+                                <p><em>Openclassrooms</em> (2024 - présent)</p>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <p><i class="fas fa-check"></i> Concevez votre site web avec PHP et MySQL</p>
+                                        <p><i class="fas fa-check"></i> Utilisez ChatGPT pour améliorer votre productivité</p>
+                                        <p><i class="fas fa-check"></i> Découvrez le fonctionnement des algorithmes</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p><i class="fas fa-check"></i> Créez des pages web dynamiques avec JavaScript</p>
+                                        <p><i class="fas fa-check"></i> Gérez du code avec Git et GitHub</p>
+                                        <p><i class="fas fa-check"></i> Apprenez à programmer avec JavaScript</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p><i class="fas fa-check"></i> Créez votre site web avec HTML5 et CSS3</p>
+                                        <p><i class="fas fa-check"></i> Comprendre le Web</p>
+                                        <p><i class="fas fa-check"></i> Découvrez les métiers de développeur</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <h3  class="degree">🌏 Travail & Exploration</h3>
+                                <p><em>PVT en Nouvelle-Zélande</em> (2022-2024)</p>
+                                <p>Pendant plus d'un an, j'ai vécu en Nouvelle-Zélande grâce à un PVT (Permis Vacances Travail), explorant le pays des plages de Northland aux fjords de Fiordland
+                                et les villes comme Queenstown, Wanaka ou encore Wellington. Cette expérience m'a permis de m'immerger dans la culture kiwi et de développer un respect profond pour la nature.
+                                </p><p>Professionnellement, j'ai occupé divers rôles, y compris la direction d'une équipe agricole, le travail de nuit en usine, ce qui a renforcé mes compétences
+                                d'adaptation, de communication et linguistique. En dehors du travail, j'ai exploré le pays, m'immergeant dans la culture maorie. Cette expérience a enrichi ma
+                                vie personnelle et professionnelle, nourrissant ma passion pour les voyages et les nouvelles cultures.</p>
+                            </div>
+                            <div class="mb-4">
+                                <h3 class="degree">🎬 Licence de Cinéma</h3>
+                                <p><i>Université Montpellier III Paul Valéry</i> (2013 - 2016)</p>
+                                <p>Durant ma licence de cinéma, j'ai étudié en profondeur l'histoire et la théorie du cinéma, tout en développant mes compétences en production, réalisation et
+                                    analyse critique de films. Cette expérience a enrichi mes perspectives professionnelles et a renforcé ma compréhension des influences culturelles et sociales
+                                    dans les milieux artistiques.</p>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section class="experience">
+
+                        <button type="button" class="section-title btn btn-light d-flex align-items-center justify-content-between w-100" onclick="toggleContent('experience')">
+                            <span class="mb-0">Expériences</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+
+                        <div>
+                            <div class="mb-4">
+                                <h5 class="job-title">🌾 Chef d'équipe</h5>
+                                <p><em>Scottfresh Limited</em> (11/2022 - 05/2023)</p>
+                                <ul>
+                                    <li>Management d'une équipe de 6 à 10 personnes, gestion des plannings, distribution des tâches et définition des objectifs de travail.</li>
+                                    <li>Suivi des travaux, formation des employés afin de développer leurs compétences et leur autonomie sur le poste de travail, contrôle du bon déroulement en termes de sécurité, qualité et productivité, report auprès de la direction.</li>
+                                    <li>Identification et résolution des problèmes sur le terrain, réponse aux différentes questions des membres de l'équipe, soutien technique et opérationnel.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5 class="job-title">📚 Employé Polyvalent</h5>
+                                <p><em>Librairie Gibert</em> (03/2018 - 09/2022)</p>
+                                <ul>
+                                    <li>Gestion de la réception des marchandises de la librairie, mise en place de processus d'optimisation pour améliorer l'efficacité du service logisitique</li>
+                                    <li>Enregistrement et vérification comptable des marchandises reçues sur un logiciel dédié propriétaire.</li>
+                                    <li>Coordination avec les différents services du magasin afin d'assurer une cohérence globale de répartition des marchandises.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="text-center bg-primary text-white mt-auto pt-2">
+        <div class="footer-links mb-1">
+            <a href="index.html">Accueil</a> | 
+            <a href="pages/portfolio.html">Portfolio</a> | 
+            <a href="pages/contact.html">Contact</a>
+        </div>
+        <div class="footer-social-icons mb-1">
+            <a href="mailto:jonathan.tramond@gmail.com"><i class="fas fa-envelope mr-1"> </i></a>|
+            <a href="https://github.com/JonathanTramond" target="_blank"><i class="fab fa-github mr-1"></i></a>|
+            <a href="https://www.linkedin.com/in/jonathan-tramond/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p>&copy; 2024 Jonathan Tramond</p>
+    </footer>
+</body>
+</html>
