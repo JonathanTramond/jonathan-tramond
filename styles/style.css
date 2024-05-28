@@ -1,0 +1,92 @@
+
+/* Palette de couleurs du projet */
+
+:root {
+    --primary-color: rgb(88, 27, 145);
+    --secondary-color: rgba(0, 0, 0, 0.877);
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.bg-dark {
+    background-color: var(--secondary-color) !important;
+}
+
+
+/* Page d'accueil */
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.section-title {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: .5rem;
+}
+.contact-info, .skills, .education, .experience {
+    margin-bottom: 2rem;
+}
+.contact-info p, .skills p, .education p, .education p i, .experience p {
+    margin-bottom: .5rem;
+}
+.experience h5, .education h5 {
+    font-size: 1.2rem;
+}
+.experience .job-title, .education .degree {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+footer div a{
+    color: white;
+}
+
+.contact,
+.contact h2,
+.contact div,
+.contact div p {
+    text-align: center;
+}
+
+
+/* Portfolio */
+.image-grayscale {
+    transition: filter 0.3s ease; /* Ajoute une transition douce */
+}
+
+.image-grayscale:hover {
+    filter: grayscale(100%);
+}
+
+.comment {
+    font-size: 0.9rem;
+}
+
+/* collapse arrows */
+
+.section-title {
+    border-radius: 0;
+}
+
+.section-title {
+    cursor: pointer;
+  }
+.rotate {
+    transform: rotate(180deg);
+    transition: transform 0.5s ease;
+}
+.rotate-back {
+    transform: rotate(0deg);
+    transition: transform 0.5s ease;
+}
+  .collapsed {
+    display: none;
+  }
