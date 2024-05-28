@@ -81,13 +81,17 @@ footer div a{
 
 /* collapse arrows */
 
-.section-title {
+.h2,
+.h2:hover,
+.h2:active,
+.h2:focus,
+.h2::selection {
+    background-color: transparent;
     border-radius: 0;
+    outline: none;
+    box-shadow: none;
 }
 
-.section-title {
-    cursor: pointer;
-  }
 .rotate {
     transform: rotate(180deg);
     transition: transform 0.5s ease;
