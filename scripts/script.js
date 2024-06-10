@@ -4,10 +4,10 @@ function toggleContent(mySection) {
     var content = document.querySelector('.'+mySection+' div');
     var icon = document.querySelector('.'+mySection+' button .fa-chevron-down');
 
-    if (content.classList.contains('collapsed')) {
-      content.classList.remove('collapsed');
+    if (content.classList.contains('section-collapsed')) {
+      content.classList.remove('section-collapsed');
     } else {
-      content.classList.add('collapsed');
+      content.classList.add('section-collapsed');
     }
 
     if (!icon.classList.contains('rotate') && !icon.classList.contains('rotate-back')) {

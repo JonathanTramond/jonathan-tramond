@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Le CV de Jonathan Tramond">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <title>Jonathan Tramond</title>
+    <title>Jyp Accueil</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/button.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -25,7 +26,7 @@
     <!-- HEADER -->
     <header class="bg-primary text-white">
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary container">
-            <a class="navbar-brand" href="index.html"><i class="fas fa-briefcase"></i> Mon CV</a>
+            <a class="navbar-brand" href="index.html"><i class="fas fa-briefcase"></i> Jonathan Tramond</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -49,42 +50,40 @@
     <main>
         <body class="d-flex flex-column min-vh-100">
             <div class="container">
-                <header class="text-center mb-5 mt-5">
-                    <div class="row align-items-center">
-                        <div class="col-md-7">
-                            <img src="images/profile.jpg" alt="Portrait de Jonathan Tramond" class="profile-img mx-auto d-block">
-                            <h1>Jonathan Tramond</h1>
-                            <p class="lead">Recherche active d'alternance : Développeur d'application JavaScript React</p>
-                        </div>
-                        <div class="col-md-4">
-                            <section class="contact-info text-center">
-                                    <h3>Mes informations</h3>
-                                <div class="card bg-dark text-white p-2">
+                    <div class="row text-white mb-5 mt-5 justify-content-center">
+
+                        <div class="my-infos row col-md-8 align-items-center ">
+                            <section class="col-md-6 text-black  text-center">
+                                <img src="images/profile.jpg" alt="Portrait de Jonathan Tramond" class="profile-img mx-auto d-block">
+                                <h1>Jonathan Tramond</h1>
+                                <p class="lead">Recherche d'alternance :<br> Développement web / <br> ReactJS</p>
+                            </section>
+
+                            <section class="col-md-6 contact-info text-center col">
+                                    <h3 class="text-black">Mes informations</h3>
+                                <div class="card bg-dark p-2 text-white">
                                     <p><i class="fas fa-envelope"></i> <a class="card-link" href="mailto:jonathan.tramond@gmail.com">jonathan.tramond@gmail.com </a></p>
                                     <p><i class="fas fa-phone"></i> 06 81 21 57 77</p>
                                     <p><i class="fas fa-map-marker-alt"></i> 34070 Montpellier, France</p>
                                     <p><i class="fab fa-linkedin-in"></i> <a class="card-link" href="https://www.linkedin.com/in/jonathan-tramond/" target="_blank">linkedin.com/in/jonathan-tramond</a></p>
-                                    <p><i class="fab fa-github"></i> <a class="card-link" href="https://github.com/JonathanTramond" target="_blank">github.com/jonathantramond</a></p>
+                                    <p><i class="fab fa-github"></i> <a class="card-link" href="https://github.com/jyptramond" target="_blank">github.com/jyptramond</a></p>
                                 </div>
                             </section>
                         </div>
+
                     </div>
-
-
-                </header>
+                            <section class="mx-auto text-center text-white myButton">
+                                <h3>Mon portofolio</h3>
+                                <div class="bg-light text-white p-2">
+                                    <a title="Mon portofolio" href="pages/portfolio.html" target="_blank"><img src="images/mon-portfolio.jpg" alt="Capture d'écran du site web Générateur de personnage Brigandyne" class="img-thumbnail image-grayscale mx-auto d-block"></a>
+                                </div>
+                            </section>
                 
                 <main>
 
-                    <div class="col-md-4 mt-3 mx-auto text-center">
-                        <h3>Découvrez mon portofolio</h3>
-                        <div class="card bg-dark text-white pt-2 pl-2 pr-2">
-                            <a title="Mon portofolio" href="pages/portfolio.html" target="_blank"><img src="images/mon-portfolio.jpg" alt="Capture d'écran du site web Générateur de personnage Brigandyne" class="img-thumbnail image-grayscale mx-auto d-block"></a>
-                            <p class="comment">J'ai développé un site web pour le jeu de rôle Brigandyne, avec un utilitaire pour générer des personnages et éditer des grimoires. J'ai également produit une web série d'actual play sur YouTube, développant ainsi ma maîtrise de HTML, CSS, JavaScript, et mes compétences en production vidéo et gestion de projet.
-                            </p>                       
-                        </div>
-                    </div>
+                    
 
-                    <section class="introduction"> 
+                    <section class="introduction text-white"> 
                         <button type="button" class="h2 btn d-flex align-items-center justify-content-between w-100" onclick="toggleContent('introduction')">
                           Introduction
                           <i class="fa-solid fa-chevron-down"></i>
@@ -101,7 +100,7 @@
                       </section>
 
                     
-                      <section class="education">
+                      <section class="education  text-white">
 
                         <button type="button" class="h2 btn d-flex align-items-center justify-content-between w-100" onclick="toggleContent('education')">
                             Parcours
@@ -148,7 +147,7 @@
                         </div>
                     </section>
                     
-                    <section class="experience">
+                    <section class="experience text-white">
 
                         <button type="button" class="h2 btn d-flex align-items-center justify-content-between w-100" onclick="toggleContent('experience')">
                             Expériences
